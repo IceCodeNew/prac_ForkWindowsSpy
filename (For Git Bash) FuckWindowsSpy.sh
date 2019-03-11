@@ -12,4 +12,4 @@ rm spy.txt extra.txt
 curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt
 curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/spy.txt
 
-python3 fws.py
+winpty "$(which python)" fws.py
