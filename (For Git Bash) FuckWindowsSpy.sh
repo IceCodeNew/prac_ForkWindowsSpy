@@ -8,8 +8,7 @@ echo "The specified dir is: $REPLY"
 unset root_letter
 cd $REPLY
 
-rm spy.txt extra.txt
-curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/extra.txt
+rm spy.txt
 curl -O https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/dnscrypt/spy.txt
 
 winpty "$(which python)" fws.py
